@@ -20,4 +20,4 @@ as suggested in the walkthrough video , i just converted the wy points to car ce
 
 #### Model Predictive Control with Latency
 
-after going through various notes , previous student works i just add delay to the actuation commands and found it to be working with the latency . i did get inspired from other students work 
+after going through various notes , previous student works , i found out that the actuation is based on the previous state . the latency of 100 milliseconds makes this actuation of no use because the current state is different from the measured state . 
