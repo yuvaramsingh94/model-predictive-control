@@ -20,4 +20,10 @@ as suggested in the walkthrough video , i just converted the wy points to car ce
 
 #### Model Predictive Control with Latency
 
-after going through various notes , previous student works , i found out that the actuation is based on the previous state . the latency of 100 milliseconds makes this actuation of no use because the current state is different from the measured state . 
+after going through various notes , previous student works , i found out that the actuation is based on the previous state . the latency of 100 milliseconds makes this actuation of no use because the current state is different from the measured state . i have add modifications to the state 
+
+if (t > 1) {   
+        a = vars[a_start + t - 2];
+        delta = vars[delta_start + t - 2];
+      }
+      
