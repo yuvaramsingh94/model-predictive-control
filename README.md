@@ -26,4 +26,5 @@ if (t > 1) {
         a = vars[a_start + t - 2];
         delta = vars[delta_start + t - 2];
       }
-      
+ 
+ a cost function is also added (combo of velocity and delta) to make the car go slow and take precious turn at corners
